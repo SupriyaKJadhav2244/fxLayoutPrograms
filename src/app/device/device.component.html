@@ -7,9 +7,9 @@
                     <strong style="font-size: 2rem;">Angular Material</strong>
                 </button>  
                 <div *ngIf="!Device">  
-                    <button mat-button [routerLink]="['/login']">Login</button>
-                    <button mat-button [routerLink]="['/registration']">Registration</button>
-                    <button mat-button [routerLink]="['/products']">Products</button>
+                    <button mat-button>Login</button>
+                    <button mat-button>Registration</button>
+                    <button mat-button>Products</button>
                 </div>  
             </div> 
             <div>
@@ -20,14 +20,14 @@
                     <button mat-menu-item>
                       <mat-icon>home</mat-icon>
                       <span>
-                          <a [routerLink]="['/home']" style="text-decoration: none;">Home</a>
+                          <a style="text-decoration: none;">Home</a>
                         </span>
                     </button>
                     <mat-divider></mat-divider>
                     <button mat-menu-item>
                       <mat-icon>address</mat-icon>
                       <span>
-                        <a [routerLink]="['/about']" style="text-decoration: none;">About</a>
+                        <a style="text-decoration: none;">About</a>
                     </span>
                     </button>
                     <mat-divider></mat-divider>
@@ -41,9 +41,9 @@
           
         </mat-toolbar-row>
         <mat-toolbar-row *ngIf="Device" fxLayoutAlign="space-between end"> 
-                <button mat-button [routerLink]="['/login']">Login</button>
-                <button mat-button [routerLink]="['/registration']">Registration</button>
-                <button mat-button [routerLink]="['/products']">Products</button> 
+                <button mat-button>Login</button>
+                <button mat-button>Registration</button>
+                <button mat-button>Products</button> 
         </mat-toolbar-row>
     </mat-toolbar>
     </div>  

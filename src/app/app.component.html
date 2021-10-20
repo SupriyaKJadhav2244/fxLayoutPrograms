@@ -1,14 +1,17 @@
-<div fxLayout fxLayoutGap="20px">
-    <a [routerLink]="['/flexLayout']">flexLayout Directive</a>
-    <a [routerLink]="['/flexLayoutGap']">flexLayoutGap Directive</a>
-    <a [routerLink]="['/flexLayoutAlign']">flexLayoutAlign Directive</a>
-    <a [routerLink]="['/fxFlex']">fxFlex Directive</a>
-    <a [routerLink]="['/fxFlexOffset']">fxFlexOffset Directive</a>
-    <a [routerLink]="['/fxFlexAlign']">fxFlexAlign Directive</a>
-    <a [routerLink]="['/fxShowAndfxHide']">fxShow & fxHide Directive</a>
-    <a [routerLink]="['/fxFlexOrder']">fxFlexOrder</a>
-    <a [routerLink]="['/examples']">Examples</a>
-</div>
+<app-device [Device]="device"></app-device> 
 
+<div fxLayout="column">
+    <div fxLayout fxLayoutAlign="space-between">
+        <a [routerLink]="['/flexLayout']" style="color: red;">flexLayout Directive</a>
+        <a [routerLink]="['/flexLayoutGap']" style="color: blue;">flexLayoutGap Directive</a>
+        <a [routerLink]="['/flexLayoutAlign']" style="color: green;">flexLayoutAlign Directive</a>
+        <a [routerLink]="['/fxFlex']" style="color: purple;">fxFlex Directive</a>
+        <a [routerLink]="['/fxFlexOffset']" style="color:black;">fxFlexOffset Directive</a>
+        <a [routerLink]="['/fxFlexAlign']" style="color:maroon;">fxFlexAlign Directive</a>
+        <a [routerLink]="['/fxShowAndfxHide']" style="color: orange;">fxShow & fxHide Directive</a>
+        <a [routerLink]="['/fxFlexOrder']" style="color: rgb(255, 0, 106);">fxFlexOrder</a>
+        <a [routerLink]="['/examples']" style="color: rgb(0, 255, 34);">Examples</a> 
+    </div> 
+</div>
 
 <router-outlet></router-outlet> 

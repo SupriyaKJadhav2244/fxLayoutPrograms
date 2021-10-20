@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DeviceComponent } from './device/device.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -18,6 +19,11 @@ import { FxflexalignComponent } from './fxflexalign/fxflexalign.component';
 import { FxshowandfxhideComponent } from './fxshowandfxhide/fxshowandfxhide.component';
 import { FxexampleComponent } from './fxexample/fxexample.component';
 import { FxflexorderComponent } from './fxflexorder/fxflexorder.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +37,8 @@ import { FxflexorderComponent } from './fxflexorder/fxflexorder.component';
     FxflexalignComponent,
     FxshowandfxhideComponent,
     FxexampleComponent,
-    FxflexorderComponent
+    FxflexorderComponent,
+    DeviceComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +46,11 @@ import { FxflexorderComponent } from './fxflexorder/fxflexorder.component';
     BrowserAnimationsModule,
     FlexLayoutModule,
     MatGridListModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatIconModule,
+    MatDividerModule,
+    MatMenuModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
